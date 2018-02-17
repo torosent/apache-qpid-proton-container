@@ -2,7 +2,7 @@
 
 Sample Dockerfile with Python 3.6 and Apache Qpid Proton
 
-You can set the `PYTHON_IMAGE_VERSION` `PROTON_VERSION` `PYTHON_VERSION` when building the image.
+You can set the `PYTHON_IMAGE_VERSION` `PROTON_VERSION` `PYTHON_DIR_VERSION` when building the image.
 
 For example:
 
