@@ -13,7 +13,7 @@ docker build -t python-qpid-proton --build-arg PYTHON_IMAGE_VERSION=3.6-slim-str
 To install Azure Event Hub SDK in Python, you can add to the Dockerfile:
 
 ```
-RUN pip3 install lxml beautifulsoup4 azure-storage azure-servicebus
+RUN pip3 install lxml beautifulsoup4 azure-storage azure-storage-blob
 RUN git clone https://github.com/Azure/azure-event-hubs-python.git
 WORKDIR /azure-event-hubs-python
 RUN python3 setup.py install && pip3 install -e .
