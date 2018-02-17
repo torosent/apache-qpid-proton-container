@@ -1,6 +1,6 @@
 # python-qpid-proton
 
-Sample Docker container with Python 3.6 and Apache Qpid Proton
+Sample Dockerfile with Python 3.6 and Apache Qpid Proton
 
 You can set the `PYTHON_IMAGE_VERSION` `PROTON_VERSION` `PYTHON_VERSION` when building the image.
 
