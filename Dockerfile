@@ -23,8 +23,7 @@ ARG PYTHON_DIR_VERSION=3.6
 RUN apt-get update && apt-get install -y git libsasl2-2 swig && \
     rm -rf /var/lib/apt/lists/*
 
-# Proton runtime and dependencies (Not all the folders in /usr/share are necessary)
-COPY --from=build /usr/share/ /usr/share/
+# Proton runtime and dependencies
 COPY --from=build /usr/include/proton/ /usr/include/proton/
 COPY --from=build /usr/lib/libqpid* /usr/lib/
 COPY --from=build /usr/local/lib/python${PYTHON_DIR_VERSION}/ /usr/local/lib/python${PYTHON_DIR_VERSION}/
